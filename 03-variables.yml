@@ -29,3 +29,10 @@
           - apple
           - banana
           - orange
+    - name: map data
+      debug:
+        msg:  Course name is {{ Course.name }}, Course language is {{ Course.language }}
+      vars:
+        Course:
+          name: Ansible
+          language: Python
