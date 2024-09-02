@@ -13,9 +13,5 @@
       ansible.builtin.debug:
         msg: Course name is - {{ item["name"] }}, Course language is - {{ item["language"] }}
       loop:
-        - Course:
-            name: Ansible
-            language: Python
-        - Course:
-            name: AWS
-            language: Java
+        - { course_name: Ansible, language: Python }
+        - { course_name: AWS, language: AWS }
