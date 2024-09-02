@@ -12,6 +12,7 @@
     - name: Print course
       ansible.builtin.debug:
         msg: Course name is - {{ item["course_name"] }}, Course language is - {{ item["language"] }}
+      when: item["course_name"] == "Ansible"
       loop:
         - { course_name: Ansible, language: Python }
         - { course_name: AWS, language: AWS }
