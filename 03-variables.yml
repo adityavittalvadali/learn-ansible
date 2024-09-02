@@ -10,7 +10,7 @@
 
     - name: Print Fruit name
       debug:
-        msg: "Fruit - {{ fruit }}"
+        msg: Fruit - "{{ fruit }}"
         vars:
           fruit:
             - Apple
