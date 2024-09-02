@@ -1,0 +1,9 @@
+- name: variables Demo
+  hosts: localhost
+  vars:
+    URL: https://www.google.com
+
+  tasks:
+    - name: Print URL
+      debug:
+        msg: URL - "{{ URL }}"
