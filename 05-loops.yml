@@ -11,7 +11,7 @@
 
     - name: Print course
       ansible.builtin.debug:
-        msg: Course name is - {{ item.name }}, Course language is {{ item.language }}
+        msg: Course name is - {{ item["name"] }}, Course language is - {{ item["language"] }}
       loop:
         - Course:
             name: Ansible
