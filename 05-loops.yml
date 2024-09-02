@@ -3,8 +3,19 @@
   tasks:
     - name: print furit names
       ansible.builtin.debug:
-        msg: "Fruit Names"
+        msg: Fruit Names is - {{ item }}
       loop:
         - apple
         - banana
         - orange
+
+    - name: Print course
+      ansible.builtin.debug:
+        msg: Course name is - {{ item.name }}, Course language is {{ item.language }}
+      loop:
+        - Course:
+            name: Ansible
+            language: Python
+        - Course:
+            name: AWS
+            language: Java
