@@ -38,9 +38,8 @@
           language: Python
 
     - name: Execute some shell command
-      ansible.builtin.shell:
-        cmd: uptime
-        register: OUT
+      ansible.builtin.shell: uptime
+      register: OUT
 
     - name: Print output
       debug:
