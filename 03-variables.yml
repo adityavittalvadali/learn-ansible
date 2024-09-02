@@ -9,12 +9,9 @@
         msg: URL - "{{ URL }}"
 
     - name: Print Fruit name
-      debug: 
-      msg: Fruit name is "{{  fruit_name  }}"
-      vars:
-        fruit_name:
-          - Apple
-          - Orange
-          - Mango
-          - Pineapple
-          - Watermelon
+      debug:
+        msg: "Fruit - {{ fruit }}"
+        vars:
+          fruit:
+            - Apple
+            - Orange 
