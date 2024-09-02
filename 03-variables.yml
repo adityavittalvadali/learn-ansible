@@ -20,3 +20,12 @@
     - name: Print user Name
       debug:
         msg: user name - "{{ user_name }}"
+
+    - name: List modules
+      debug:
+        msg: Frist fruit name is {{ FRUITS.0 }}, second fruit name is {{ FRUITS.1 }}
+      vars:
+        FRUITS:
+          - apple
+          - banana
+          - orange
