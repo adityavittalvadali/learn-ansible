@@ -2,6 +2,9 @@
   hosts: localhost
   vars:
     URL: https://www.google.com
+  vars_files:
+    - vars.yml
+
 
   tasks:
     - name: Print URL
@@ -13,3 +16,7 @@
         msg: fruit - "{{ fruit }}"
       vars:
         fruit: apple
+
+    - name: Print user Name
+      debug:
+        msg: user name - "{{ user_name }}"
