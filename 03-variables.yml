@@ -8,10 +8,8 @@
       debug:
         msg: URL - "{{ URL }}"
 
-    - name: Print Fruit name
+    - name: Print fruit name
       debug:
-        msg: Fruit - "{{ fruit }}"
+        msg: fruit - "{{ fruit }}"
         vars:
-          fruit:
-            - Apple
-            - Orange 
+          fruit: banana
