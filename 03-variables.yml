@@ -7,3 +7,13 @@
     - name: Print URL
       debug:
         msg: URL - "{{ URL }}"
+
+    - name: Print Fruit name
+      msg: Fruit name is "{{  fruit_name  }}"
+      vars:
+        fruit_name:
+          - Apple
+          - Orange
+          - Mango
+          - Pineapple
+          - Watermelon
